@@ -1,5 +1,5 @@
 import streamlit as st
-import emoji
+#import emoji
 
 # Title of the app
 st.title("Calculator-Shujaat Waqar")
