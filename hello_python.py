@@ -1,12 +1,13 @@
 import streamlit as st
-#import emoji
+#import
+emoji=0
 
 # Title of the app
-st.title("Calculator-Shujaat Waqar")
+st.title("Calculator")
 
 # Displaying calculator icon
-# st.markdown(f"<h1 style='text-align: left;'>{emoji.emojize(':abacus:')}</h1>", unsafe_allow_html=True)
-
+#st.markdown(f"<h1 style='text-align: left;'>{emoji.emojize(':abacus:')}</h1>", unsafe_allow_html=True)
+st.markdown(f"<h1 style='text-align: left;'>{'shujaat waqar'}</h1>", unsafe_allow_html=True)
 # Creating a container for inputs to be placed side by side
 display = st.empty()
 display.markdown("<div style='font-size: 40px; color: #333;'>0</div>", unsafe_allow_html=True)
@@ -106,14 +107,14 @@ with col3:
     if st.button("="):
         calculate_result()
 
-#with col4:
- #   if st.button(emoji.emojize(":heavy_plus_sign:")):
-  #      set_operation("Addition")
-   # if st.button(emoji.emojize(":heavy_minus_sign:")):
-    #    set_operation("Subtraction")
-    #if st.button(emoji.emojize(":heavy_multiplication_x:")):
-    #    set_operation("Multiplication")
-    #if st.button(emoji.emojize(":heavy_division_sign:")):
-     #   set_operation("Division")
-    #if st.button("C"):
-    #    clear_input()
+with col4:
+    if st.button(":heavy_plus_sign:"):
+        set_operation("Addition")
+    if st.button(":heavy_minus_sign:"):
+        set_operation("Subtraction")
+    if st.button(":heavy_multiplication_x:"):
+        set_operation("Multiplication")
+    if st.button(":heavy_division_sign:"):
+        set_operation("Division")
+    if st.button("C"):
+        clear_input()
